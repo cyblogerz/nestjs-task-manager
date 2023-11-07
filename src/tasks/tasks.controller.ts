@@ -15,7 +15,7 @@ export class TasksController {
   create_task(
     @Body('title') title: string,
     @Body('description') description: string,
-  ) {
-    console.log(title, description);
+  ): Task {
+    return this.tasksService.createTask(title, description);
   }
 }
