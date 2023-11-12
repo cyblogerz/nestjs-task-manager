@@ -45,4 +45,10 @@ export class UserRepository {
     });
     return user;
   }
+  async find(username: string): Promise<User> {
+    const user = await this.userEntityRepository.findOne({
+      where: { username },
+    });
+    return user;
+  }
 }
