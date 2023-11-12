@@ -1,1 +1,1 @@
-Task manager backend in nestjs with postgres db.
+Task manager backend in typescript with nestjs and postgres db.
